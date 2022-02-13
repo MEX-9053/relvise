@@ -484,7 +484,99 @@ p{
 
 /*---------------------------------------------- 6 ----------------------------------------------*/
 
-/* Я не знаю как это сделать */
+.brands {
+    background: #FAFAFA;
+    padding-top: 50px;
+}
+
+.brands-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.brands-box-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-bottom: 70px;
+}
+
+.brands-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #252B42;
+    height: 77px;
+    margin: 0px -500px;
+}
+
+.brands-item-info {
+    display: flex;
+    flex-direction: row;
+    background: #17213C;
+    border-radius: 2px;
+    width: 986px;
+    height: 124px;
+    padding: 30px 50px;
+    margin-top: -62px;
+}
+
+.brands-item-info>h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    max-width: 266px;
+}
+
+.brands-item-imput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 58px;
+    width: 450px;
+    padding-left: 20px;
+    margin-left: 180px;
+}
+
+.brands-item-imput>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.brands-item-imput-button {
+
+}
+
+.brands-item-imput-button>a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 235px;
+}
 
 /*---------------------------------------------- 7 ----------------------------------------------*/
 
@@ -631,6 +723,7 @@ p{
     line-height: 133%;
     letter-spacing: 0.1px;
     color: #252B42;
+    margin-bottom: 10px;
 }
 
 .contact-box-info>p {
@@ -769,7 +862,7 @@ p{
 }
 
 .footer-info {
-    margin-right: 410px;
+    margin-right: 405px;
 }
 
 .footer-info>p {
