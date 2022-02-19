@@ -534,7 +534,13 @@ p{
     max-width: 266px;
 }
 
-.brands-item-imput {
+.brands-item-imputzone {
+
+}
+
+input.brands-item-imput {
+    margin-left: 180px;
+    outline: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -545,10 +551,9 @@ p{
     height: 58px;
     width: 450px;
     padding-left: 20px;
-    margin-left: 180px;
 }
 
-.brands-item-imput>p {
+input.brands-item-imput::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
@@ -559,10 +564,6 @@ p{
 }
 
 .brands-item-imput-button {
-
-}
-
-.brands-item-imput-button>a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
@@ -575,8 +576,9 @@ p{
     border: 1px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 0px 5px 5px 0px;
-    margin-left: 235px;
-}
+    margin-left: 223px;
+    padding: 14px 22px;
+} 
 
 /*---------------------------------------------- 7 ----------------------------------------------*/
 
