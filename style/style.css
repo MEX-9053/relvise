@@ -892,3 +892,49 @@ input.brands-item-imput::placeholder {
 }
 
 /*---------------------------------------------- End ----------------------------------------------*/
+@media (max-width:768px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .consulting-item {
+        margin-right: 0px;
+        width: 230px;
+        height: 270px;
+        margin-bottom: 20px;
+    }
+
+    .designing-item {
+        height: 180px;
+        width: 170px;
+    }
+
+    .designing-item>h2 {
+        font-size: 30px;
+    }
+
+    .practice {
+        justify-content: center;
+    }
+
+    .practice-item {
+        width: 170px;
+        height: 250px;
+
+    }
+
+    .practice-item>img {
+        width: 170px;
+    }
+
+    .practice-item>p {
+        font-size: 11px;
+    }
+}
