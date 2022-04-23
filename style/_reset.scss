@@ -16,7 +16,6 @@ html,body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
-
 img{
     vertical-align: top;
 }
@@ -29,18 +28,7 @@ a{
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-p{
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
+h1{
     flex-direction: column;
 }
 
