@@ -880,7 +880,7 @@ input.brands-item-imput::placeholder {
 
 /*---------------------------------------------- End ----------------------------------------------*/
 
-@media (max-width:1080px) {
+@media (max-width:1024px) {
     .menu {
         justify-content: center;
     }
@@ -1113,5 +1113,84 @@ input.brands-item-imput::placeholder {
 
         justify-content: space-between;
         padding-top: 9px;
+    }
+}
+
+@media (max-width:480px) {
+    .menu-logo {
+        margin-right: 50px;
+
+        a {
+        font-size: 20px;
+        }
+    }
+
+    .consulting-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .consulting-item {
+        width: 328px;
+        height: 242px;
+        padding: 35px 40px;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+    
+        h2 {
+            font-size: 24px;
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .decignig-info {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .designing-box {
+        flex-wrap: wrap;
+    }
+
+    .designing-item {
+        margin-bottom: 20px;
+    }
+
+    .practice {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .practice-box {
+        flex-wrap: wrap;
+    }
+
+    .practice-item {
+        margin-bottom: 70px;
+    }
+    
+    .brands-box-images {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px;
+
+            a {
+               margin-bottom: 10px; 
+               margin-top: 10px;
+            }
+    }
+    
+    .brands-item-info {
+        flex-wrap: wrap;
+        height: 224px;
+
+        h2 {
+            text-align: center;
+        }
     }
 }
