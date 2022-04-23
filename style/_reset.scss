@@ -6,9 +6,6 @@
     box-sizing: border-box;
     border: 0;
 }
-
-
-
 html,body{
 
     height: 100%;
@@ -19,16 +16,24 @@ html,body{
 img{
     vertical-align: top;
 }
-
 ul,ol{
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+p{
+    font-size: inherit;
+    font-weight: inherit;
+}
 
-h1{
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
 }
 

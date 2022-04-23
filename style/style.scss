@@ -2,13 +2,15 @@
 
 @import 'reset';
 
-$grey: #737373;
-$white: #ffffff;
-$nowhite: #fafafa;
-$orange: #FF7B47;
-$lightdarkblue: #0D5C63;
-$darkblue: #252B42;
-$darkdarkblue: #17213C;
+$primary-color: #FF7B47;
+$secondary-color: #0D5C63;
+$first-backgroud-color: #FFFFFF;
+$second-background-color: #FAFAFA;
+$text-color: #252b42;
+$second-text-color: #737373;
+$imput-border-color: #E6E6E6;
+$imput-background-color: #F9F9F9;
+$primary-font: 'Montserrat';
 
 /*---------------------------------------------- 1 ----------------------------------------------*/
 
@@ -28,7 +30,7 @@ $darkdarkblue: #17213C;
     font-size: 24px;
     line-height: 133%;
     letter-spacing: 0.1px;
-    color: $darkblue;
+    color: $text-color;
 }
 
 .menu-nav {
@@ -48,30 +50,32 @@ $darkdarkblue: #17213C;
     font-weight: 600;
     line-height: 171%;
     letter-spacing: 0.2px;
-    color: $grey;
+    color: $second-text-color;
 }
 
 .header-info {
     margin-top: 80px;
+
+    h1 {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 128%;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        max-width: 396px;
+    }   
+
+    p {
+        margin-top: 35px;
+        font-weight: 58px;
+        line-height: 128%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        max-width: 376px;
+    }
 }
 
-.header-info>h1 {
-    font-weight: 800;
-    font-size: 58px;
-    line-height: 128%;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-    max-width: 396px;
-}
 
-.header-info>p {
-    margin-top: 35px;
-    font-weight: 58px;
-    line-height: 128%;
-    letter-spacing: 0.2px;
-    color: $grey;
-    max-width: 376px;
-}
 
 .header-info-buttons {
     margin-top: 35px;
@@ -79,8 +83,8 @@ $darkdarkblue: #17213C;
     display: flex;
 }
 
-.first-button {
-    border: 1px solid $lightdarkblue;
+.right-button {
+    border: 1px solid $secondary-color;
     border-radius: 37px;
     padding: 0 35px;
     height: 48px;
@@ -90,12 +94,12 @@ $darkdarkblue: #17213C;
     max-width: 187px;
     font-size: 14px;
     letter-spacing: 0.1px;
-    color: $lightdarkblue;
+    color: $secondary-color;
     margin-right: 10px;
 }
 
-.second-button {
-    border: 1px solid $lightdarkblue;
+.left-button {
+    border: 1px solid $secondary-color;
     border-radius: 37px;
     padding: 0 35px;
     height: 48px;
@@ -105,20 +109,20 @@ $darkdarkblue: #17213C;
     max-width: 187px;
     font-size: 14px;
     letter-spacing: 0.1px;
-    color: $lightdarkblue;
+    color: $secondary-color;
     margin-right: 10px;
 }
 
-.first-button:hover {
-    border-color: $orange;
-    background: $orange;
-    color: $white;
+.right-button:hover {
+    border-color: $primary-color;
+    background: $primary-color;
+    color: $first-backgroud-color;
 }
 
-.second-button:hover {
-    border-color: $orange;
-    background: $orange;
-    color: $white;
+.left-button:hover {
+    border-color: $primary-color;
+    background: $primary-color;
+    color: $first-backgroud-color;
 }
 
 .header {
@@ -130,7 +134,7 @@ $darkdarkblue: #17213C;
 /*---------------------------------------------- 2 ----------------------------------------------*/
 
 .consultancy {
-    background: $nowhite;
+    background: $second-background-color;
 }
 
 .consulting-box {
@@ -139,28 +143,8 @@ $darkdarkblue: #17213C;
     margin-top: -125px;
 }
 
-.consulting-item>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 133%;
-    letter-spacing: 0.1px;
-    color: $darkblue;
-}
-
-.consulting-item>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: 0.2px;
-    color: $grey;
-}
-
 .consulting-item {
-    background: $white;
+    background: $first-backgroud-color;
     width: 328px;
     height: 242px;
     padding: 35px 40px;
@@ -171,18 +155,38 @@ $darkdarkblue: #17213C;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
+
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color: $text-color;
+    }
+
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 .consulting-item:last-child {
-    background: $lightdarkblue;
-}
+    background: $secondary-color;
 
-.consulting-item:last-child>h2 {
-    color: $white;
-}
+    h2 {
+         color: $first-backgroud-color;
+    }
 
-.consulting-item:last-child>p {
-    color: $white;
+    p {
+        color: $first-backgroud-color;
+    }
 }
 
 /*---------------------------------------------- 3 ----------------------------------------------*/
@@ -190,7 +194,7 @@ $darkdarkblue: #17213C;
 .decign {
     padding-top: 80px;
     padding-bottom: 80px;
-    background: $nowhite;
+    background: $second-background-color;
 }
 
 .decignig-info {
@@ -198,29 +202,29 @@ $darkdarkblue: #17213C;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
-}
 
-.decignig-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-    margin-bottom: 10px;
-}
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
 
-.decignig-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $grey;
-    max-width: 520px;
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        max-width: 520px;
+    }
 }
 
 .designing-box {
@@ -236,36 +240,38 @@ $darkdarkblue: #17213C;
     flex-direction: column;
     align-items: center;
     padding: 30px 40px;
-    background: $white;
+    background: $first-backgroud-color;
+
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $text-color;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
-.designing-item>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-}
 
-.designing-item>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $grey;
-}
 
 /*---------------------------------------------- 4 ----------------------------------------------*/
 
 .practice {
     display: flex;
-    background: $nowhite;
+    background: $second-background-color;
     padding: 125px;
 }
 
@@ -278,29 +284,29 @@ $darkdarkblue: #17213C;
 
 .practice-info {
     margin-bottom: 45px;
-}
 
-.practice-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-    margin-bottom: 10px;
-}
-
-.practice-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $grey;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 .practice-item {
@@ -311,36 +317,36 @@ $darkdarkblue: #17213C;
     height: 341px;
     margin-left: 20px;
     margin-right: 20px;
-    background: $white;
-}
+    background: $first-backgroud-color;
 
-.practice-item>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.1px;
-    color: $darkblue;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    max-width: 140px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.practice-item>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: 0.2px;
-    color: $grey;
-    margin-bottom: 50px;
-    max-width: 180px;
-    margin-left: 30px;
-    margin-top: 15px;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        max-width: 140px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        margin-bottom: 50px;
+        max-width: 180px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
 }
 
 .practice-item:first-child>p {
@@ -350,7 +356,7 @@ $darkdarkblue: #17213C;
 /*---------------------------------------------- 5 ----------------------------------------------*/
 
 .about-us {
-    background: $white;;
+    background: $first-backgroud-color;;
     padding-bottom: 135px;
 }
 
@@ -359,30 +365,30 @@ $darkdarkblue: #17213C;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.about-us-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-    margin-bottom: 15px;
-}
-
-.about-us-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $grey;
-    max-width: 520px;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        max-width: 520px;
+    }
 }
 
 .about-us-box {
@@ -408,29 +414,29 @@ $darkdarkblue: #17213C;
     align-items: flex-start;
     margin-right: -50px;
     margin-bottom: 30px;
-}
 
-.about-us-box-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.about-us-box-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: 0.2px;
-    color: $grey;
-    margin-bottom: 20px;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+        margin-bottom: 20px;
+    }
 }
 
 .about-us-item {
@@ -443,33 +449,33 @@ $darkdarkblue: #17213C;
 .about-us-item-info {
     margin-left: 21px;
     margin-right: -50px ;
-}
 
-.about-us-item-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.1px;
-    color: $darkblue;
-    margin-bottom: 5px;
-}
-
-.about-us-item-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: $grey;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 /*---------------------------------------------- 6 ----------------------------------------------*/
 
 .brands {
-    background: $nowhite;
+    background: $second-background-color;
     padding-top: 50px;
 }
 
@@ -491,7 +497,7 @@ $darkdarkblue: #17213C;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: $darkblue;
+    background: $text-color;
     height: 77px;
     margin: 0px -500px;
 }
@@ -499,24 +505,24 @@ $darkdarkblue: #17213C;
 .brands-item-info {
     display: flex;
     flex-direction: row;
-    background: $darkdarkblue;
+    background: #17213C;
     border-radius: 2px;
     width: 986px;
     height: 124px;
     padding: 30px 50px;
     margin-top: -62px;
     border-radius: 2px;
-}
 
-.brands-item-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 133%;
-    letter-spacing: 0.1px;
-    color: $white;
-    max-width: 266px;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color: $first-backgroud-color;
+        max-width: 266px;
+    }
 }
 
 .brands-item-imputzone {
@@ -531,8 +537,8 @@ input.brands-item-imput {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #F9F9F9;
-    border: 1px solid #E6E6E6;
+    background: $imput-background-color;
+    border: 1px solid $imput-border-color;
     box-sizing: border-box;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -544,25 +550,25 @@ input.brands-item-imput {
 }
 
 input.brands-item-imput::placeholder {
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 200%;
     letter-spacing: 0.2px;
-    color: $grey;
+    color: $second-text-color;
 }
 
 .brands-item-imput-button {
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 200%;
     letter-spacing: 0.2px;
-    color: $white;
-    background: $orange;
-    border: 1px solid #E6E6E6;
+    color: $first-backgroud-color;
+    background: $primary-color;
+    border: 1px solid $imput-border-color;
     box-sizing: border-box;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -586,27 +592,26 @@ input.brands-item-imput::placeholder {
     align-items: center;
     margin: 80px 0px;
 
-}
-
-.communication-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 142%;
-    letter-spacing: 0.2px;
-    color: $darkblue;
-}
-
-.communication-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $grey;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+        color: $text-color;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 .communication-box {
@@ -620,46 +625,46 @@ input.brands-item-imput::placeholder {
     flex-direction: column;
     align-items: center;
     padding: 50px 40px;
-    background: $white;
+    background: $first-backgroud-color;
     width: 328px;
-}
 
-.communication-item>img {
-    margin-bottom: 14px;
-}
-
-.communication-item>h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: $darkblue;
-    margin-top: 15px;
-}
-
-.communication-item>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 171%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: $darkblue;
+    img {
+        margin-bottom: 14px;
+    }
+    
+    h3 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        margin-top: 15px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $text-color;
+    }
 }
 
 .communication-item-buttons>a {
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.2px;
-    color: $orange;
-    border: 1px solid $orange;
+    color: $primary-color;
+    border: 1px solid $primary-color;
     box-sizing: border-box;    
     border-radius: 5px;
     width: 160px;
@@ -672,27 +677,29 @@ input.brands-item-imput::placeholder {
 }
 
 .communication-item:nth-child(2) {
-    background: $darkblue;
+    background: $text-color;
     padding: 80px 40px;
 }
 
-.communication-item:nth-child(2)>h3 {
-    color: $white;
+.communication-item:nth-child(2) {
+    h3 {
+        color: $first-backgroud-color;
+    }
+
+    p {
+        color: $first-backgroud-color;
+    }
+
+    .communication-item-buttons>a {
+        color: $first-backgroud-color;
+        border: 1px solid $first-backgroud-color;
+    }
 }   
-
-.communication-item:nth-child(2)>p {
-    color: $white;
-}
-
-.communication-item:nth-child(2) .communication-item-buttons>a {
-    color: $white;
-    border: 1px solid $white;
-}
 
 /*---------------------------------------------- 8 ----------------------------------------------*/
 
 .contact {
-    background: $nowhite;
+    background: $second-background-color;
 }
 
 .contact-box {
@@ -705,40 +712,40 @@ input.brands-item-imput::placeholder {
 .contact-box-info {
     display: flex;
     flex-direction: column;
-}
 
-.contact-box-info>h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 133%;
-    letter-spacing: 0.1px;
-    color: $darkblue;
-    margin-bottom: 10px;
-}
-
-.contact-box-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    letter-spacing: 0.2px;
-    color: $grey;
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.1px;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 .contact-item-button>a {
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 200%;
     letter-spacing: 0.2px;
-    color: $white;
+    color: $first-backgroud-color;
     width: 163px;
     height: 58px;
-    background: $orange;
+    background: $primary-color;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -750,7 +757,7 @@ input.brands-item-imput::placeholder {
 /*---------------------------------------------- 9 ----------------------------------------------*/
 
 .information {
-    background: $darkdarkblue;
+    background: #17213C;
     padding: 50px 0px;
 }
 
@@ -771,80 +778,76 @@ input.brands-item-imput::placeholder {
     align-items: flex-start;
     width: 152px;
     height: 170px;
-    margin: 0px 15px
+    margin: 0px 15px;
+
+    h3 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $first-backgroud-color;
+        margin-bottom: 10px;
+    }
+    
+    p>a {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: $first-backgroud-color;
+        margin: 10px 0px;
+    }
+    
+    p>a:last-child {
+        margin-bottom: 0px;
+    }
 }
 
 .information-item:first-child {
     margin-left: 0px;
 }
 
-.information-item>h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.1px;
-    color: $white;
-    margin-bottom: 10px;
-}
-
-.information-item>p>a {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.2px;
-    color: $white;
-    margin: 10px 0px;
-}
-
-.information-item>p>a:last-child {
-    margin-bottom: 0px;
-}
-
 .information-filling {
     display: flex;
     flex-direction: column;
-}
 
-.information-filling>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.1px;
-    color: $white;
-    margin-bottom: 15px;
+    h3 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+        color: $first-backgroud-color;
+        margin-bottom: 15px;
+    }
 }
 
 .information-filling-item {
     display: flex;
     flex-direction: row;
-    margin: 5px 0px;
-}
+    padding: 5px 0px;
 
-.information-filling-item:last-child {
-    margin-bottom: 0px;
-}
-
-.information-filling-item>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.2px;
-    color: $white;
-    margin-left: 10px;
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: $first-backgroud-color;
+        margin-left: 10px;
+    }
 }
 
 /*---------------------------------------------- 10 ----------------------------------------------*/
 
 .footer {
-    background: $nowhite;
+    background: $second-background-color;
     padding: 25px 0px;
 }
 
@@ -855,16 +858,16 @@ input.brands-item-imput::placeholder {
 
 .footer-info {
     margin-right: 405px;
-}
 
-.footer-info>p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.2px;
-    color: $grey;
+    p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
 }
 
 .footer-item {
@@ -876,6 +879,36 @@ input.brands-item-imput::placeholder {
 }
 
 /*---------------------------------------------- End ----------------------------------------------*/
+
+@media (max-width:1080px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .practice {
+        justify-content: center;
+    }
+
+    .practice-item {
+        width: 210px;
+
+        img {
+            width: 210px;
+        }
+    }
+
+    .about-us-box-filling {
+        margin-left: 30px;
+    }
+}
+
 @media (max-width:768px) {
     .menu {
         justify-content: center;
@@ -906,23 +939,179 @@ input.brands-item-imput::placeholder {
 
     .practice {
         justify-content: center;
+        padding: 0px 0px 50px 0px;
     }
 
     .practice-item {
         width: 170px;
         height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;  
 
+        img {
+            width: 170px;
+        }
+        
+        h2 {
+            margin: 10px;
+        }
+
+        p {
+            margin: 10px;
+        }
     }
 
-    .practice-item>img {
-        width: 170px;
-    }
-
-    .practice-item>p {
-        font-size: 11px;
-    }
-
-    .practice-item{
+    .practice-item:first-child>p {
         margin: 10px;
+    }
+
+    .practice-item:nth-child(2)>p {
+        margin-bottom: 30px;
+    }
+
+    .practice-item:nth-child(3)>p {
+        margin-bottom: 50px;
+    }
+
+    .practice-item:last-child>p {
+        margin-bottom: 10px;
+    }
+
+    .about-us {
+        padding: 0px;
+    }
+
+    .about-us-info {
+        margin-bottom: 50px;
+    }
+
+    .about-us-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-us-box-filling {
+        margin-left: 0px;
+        padding-top: 5px;
+        margin-bottom: 0px;
+
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .brands {
+        padding-top: 0px;
+        margin-top: -30px;
+    }
+
+    .brands-box-images {
+        padding: 30px 0px;
+    }
+
+    input.brands-item-imput {
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: -30px;
+    }
+
+    .brands-item-info {
+        width: 700px;
+        justify-content: center;
+        padding: 15px 25px;
+
+        h2 {
+            margin-top: 15px;
+        }
+    }
+
+    .communication {
+        padding-bottom: 50px;
+    }
+
+    .communication-info {
+        margin: 50px 0px;
+    }
+
+    .communication-item {
+        padding: 25px 5px;
+        width: 230px;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .communication-item:nth-child(2) {
+        padding: 50px 5px;
+    }
+
+    .contact-box {
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .contact-item-button {
+        margin-left: 20px;
+    }
+
+    .information {
+        padding: 25px 0px 15px 0px;
+    }
+
+    .inofrmation-box {
+        flex-wrap: wrap;
+    }
+
+    .information-links {
+        padding: 0px 40px;
+        margin-bottom: 10px;
+    }
+
+    .information-filling {
+        flex-direction: row;
+        margin-top: 10px;
+
+        h3 {
+            margin: 5px 5px 5px 30px;
+        }
+    }
+
+    .information-filling-item {  
+        margin-left: 25px;
+        height: 40px;
+
+        p {
+            font-size: 12px;
+            margin-top: 2.5px;
+        }
+    }
+
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer-box {
+        p {
+            font-size: 12px;
+            width: 200px;
+        }
+    }
+
+    .footer-item {
+
+        justify-content: space-between;
+        padding-top: 9px;
     }
 }

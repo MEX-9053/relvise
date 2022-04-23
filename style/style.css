@@ -78,7 +78,7 @@ p {
   font-size: 24px;
   line-height: 133%;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
 }
 
 .menu-nav {
@@ -108,16 +108,16 @@ p {
   margin-top: 80px;
 }
 
-.header-info > h1 {
+.header-info h1 {
   font-weight: 800;
   font-size: 58px;
   line-height: 128%;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
   max-width: 396px;
 }
 
-.header-info > p {
+.header-info p {
   margin-top: 35px;
   font-weight: 58px;
   line-height: 128%;
@@ -134,7 +134,7 @@ p {
   display: flex;
 }
 
-.first-button {
+.right-button {
   border: 1px solid #0D5C63;
   border-radius: 37px;
   padding: 0 35px;
@@ -155,7 +155,7 @@ p {
   margin-right: 10px;
 }
 
-.second-button {
+.left-button {
   border: 1px solid #0D5C63;
   border-radius: 37px;
   padding: 0 35px;
@@ -176,16 +176,16 @@ p {
   margin-right: 10px;
 }
 
-.first-button:hover {
+.right-button:hover {
   border-color: #FF7B47;
   background: #FF7B47;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
-.second-button:hover {
+.left-button:hover {
   border-color: #FF7B47;
   background: #FF7B47;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .header {
@@ -196,7 +196,7 @@ p {
 
 /*---------------------------------------------- 2 ----------------------------------------------*/
 .consultancy {
-  background: #fafafa;
+  background: #FAFAFA;
 }
 
 .consulting-box {
@@ -210,28 +210,8 @@ p {
   margin-top: -125px;
 }
 
-.consulting-item > h2 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 133%;
-  letter-spacing: 0.1px;
-  color: #252B42;
-}
-
-.consulting-item > p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 143%;
-  letter-spacing: 0.2px;
-  color: #737373;
-}
-
 .consulting-item {
-  background: #ffffff;
+  background: #FFFFFF;
   width: 328px;
   height: 242px;
   padding: 35px 40px;
@@ -254,23 +234,43 @@ p {
           justify-content: space-between;
 }
 
+.consulting-item h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.consulting-item p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
 .consulting-item:last-child {
   background: #0D5C63;
 }
 
-.consulting-item:last-child > h2 {
-  color: #ffffff;
+.consulting-item:last-child h2 {
+  color: #FFFFFF;
 }
 
-.consulting-item:last-child > p {
-  color: #ffffff;
+.consulting-item:last-child p {
+  color: #FFFFFF;
 }
 
 /*---------------------------------------------- 3 ----------------------------------------------*/
 .decign {
   padding-top: 80px;
   padding-bottom: 80px;
-  background: #fafafa;
+  background: #FAFAFA;
 }
 
 .decignig-info {
@@ -287,19 +287,19 @@ p {
   padding-bottom: 50px;
 }
 
-.decignig-info > h2 {
-  font-family: 'Montserrat';
+.decignig-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 10px;
 }
 
-.decignig-info > p {
-  font-family: 'Montserrat';
+.decignig-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -340,22 +340,22 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 40px;
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
-.designing-item > h2 {
-  font-family: 'Montserrat';
+.designing-item h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
 }
 
-.designing-item > p {
-  font-family: 'Montserrat';
+.designing-item p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -370,7 +370,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #fafafa;
+  background: #FAFAFA;
   padding: 125px;
 }
 
@@ -394,20 +394,20 @@ p {
   margin-bottom: 45px;
 }
 
-.practice-info > h2 {
-  font-family: 'Montserrat';
+.practice-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 10px;
 }
 
-.practice-info > p {
-  font-family: 'Montserrat';
+.practice-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -432,17 +432,17 @@ p {
   height: 341px;
   margin-left: 20px;
   margin-right: 20px;
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
-.practice-item > h2 {
-  font-family: 'Montserrat';
+.practice-item h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
   margin-top: 30px;
   margin-bottom: 15px;
   max-width: 140px;
@@ -450,8 +450,8 @@ p {
   margin-top: 30px;
 }
 
-.practice-item > p {
-  font-family: 'Montserrat';
+.practice-item p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -470,7 +470,7 @@ p {
 
 /*---------------------------------------------- 5 ----------------------------------------------*/
 .about-us {
-  background: #ffffff;
+  background: #FFFFFF;
   padding-bottom: 135px;
 }
 
@@ -488,20 +488,20 @@ p {
           align-items: center;
 }
 
-.about-us-info > h2 {
-  font-family: 'Montserrat';
+.about-us-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 15px;
 }
 
-.about-us-info > p {
-  font-family: 'Montserrat';
+.about-us-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -558,20 +558,20 @@ p {
   margin-bottom: 30px;
 }
 
-.about-us-box-info > h2 {
-  font-family: 'Montserrat';
+.about-us-box-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.about-us-box-info > p {
-  font-family: 'Montserrat';
+.about-us-box-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -600,19 +600,19 @@ p {
   margin-right: -50px;
 }
 
-.about-us-item-info > h2 {
-  font-family: 'Montserrat';
+.about-us-item-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 5px;
 }
 
-.about-us-item-info > p {
-  font-family: 'Montserrat';
+.about-us-item-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -623,7 +623,7 @@ p {
 
 /*---------------------------------------------- 6 ----------------------------------------------*/
 .brands {
-  background: #fafafa;
+  background: #FAFAFA;
   padding-top: 50px;
 }
 
@@ -666,7 +666,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #252B42;
+  background: #252b42;
   height: 77px;
   margin: 0px -500px;
 }
@@ -688,14 +688,14 @@ p {
   border-radius: 2px;
 }
 
-.brands-item-info > h2 {
-  font-family: 'Montserrat';
+.brands-item-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 133%;
   letter-spacing: 0.1px;
-  color: #ffffff;
+  color: #FFFFFF;
   max-width: 266px;
 }
 
@@ -739,7 +739,7 @@ input.brands-item-imput {
 }
 
 input.brands-item-imput::-webkit-input-placeholder {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -749,7 +749,7 @@ input.brands-item-imput::-webkit-input-placeholder {
 }
 
 input.brands-item-imput:-ms-input-placeholder {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -759,7 +759,7 @@ input.brands-item-imput:-ms-input-placeholder {
 }
 
 input.brands-item-imput::-ms-input-placeholder {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -769,7 +769,7 @@ input.brands-item-imput::-ms-input-placeholder {
 }
 
 input.brands-item-imput::placeholder {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -779,13 +779,13 @@ input.brands-item-imput::placeholder {
 }
 
 .brands-item-imput-button {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 200%;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #FFFFFF;
   background: #FF7B47;
   border: 1px solid #E6E6E6;
   -webkit-box-sizing: border-box;
@@ -826,18 +826,18 @@ input.brands-item-imput::placeholder {
   margin: 80px 0px;
 }
 
-.communication-info > h2 {
-  font-family: 'Montserrat';
+.communication-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 142%;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
 }
 
-.communication-info > p {
-  font-family: 'Montserrat';
+.communication-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -872,39 +872,39 @@ input.brands-item-imput::placeholder {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 40px;
-  background: #ffffff;
+  background: #FFFFFF;
   width: 328px;
 }
 
-.communication-item > img {
+.communication-item img {
   margin-bottom: 14px;
 }
 
-.communication-item > h3 {
-  font-family: 'Montserrat';
+.communication-item h3 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
   margin-top: 15px;
 }
 
-.communication-item > p {
-  font-family: 'Montserrat';
+.communication-item p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 171%;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #252B42;
+  color: #252b42;
 }
 
 .communication-item-buttons > a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -934,26 +934,26 @@ input.brands-item-imput::placeholder {
 }
 
 .communication-item:nth-child(2) {
-  background: #252B42;
+  background: #252b42;
   padding: 80px 40px;
 }
 
-.communication-item:nth-child(2) > h3 {
-  color: #ffffff;
+.communication-item:nth-child(2) h3 {
+  color: #FFFFFF;
 }
 
-.communication-item:nth-child(2) > p {
-  color: #ffffff;
+.communication-item:nth-child(2) p {
+  color: #FFFFFF;
 }
 
 .communication-item:nth-child(2) .communication-item-buttons > a {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 /*---------------------------------------------- 8 ----------------------------------------------*/
 .contact {
-  background: #fafafa;
+  background: #FAFAFA;
 }
 
 .contact-box {
@@ -980,19 +980,19 @@ input.brands-item-imput::placeholder {
           flex-direction: column;
 }
 
-.contact-box-info > h2 {
-  font-family: 'Montserrat';
+.contact-box-info h2 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 133%;
   letter-spacing: 0.1px;
-  color: #252B42;
+  color: #252b42;
   margin-bottom: 10px;
 }
 
-.contact-box-info > p {
-  font-family: 'Montserrat';
+.contact-box-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1002,13 +1002,13 @@ input.brands-item-imput::placeholder {
 }
 
 .contact-item-button > a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 200%;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 163px;
   height: 58px;
   background: #FF7B47;
@@ -1074,34 +1074,34 @@ input.brands-item-imput::placeholder {
   margin: 0px 15px;
 }
 
-.information-item:first-child {
-  margin-left: 0px;
-}
-
-.information-item > h3 {
-  font-family: 'Montserrat';
+.information-item h3 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.1px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
-.information-item > p > a {
-  font-family: 'Montserrat';
+.information-item p > a {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 10px 0px;
 }
 
-.information-item > p > a:last-child {
+.information-item p > a:last-child {
   margin-bottom: 0px;
+}
+
+.information-item:first-child {
+  margin-left: 0px;
 }
 
 .information-filling {
@@ -1114,14 +1114,14 @@ input.brands-item-imput::placeholder {
           flex-direction: column;
 }
 
-.information-filling > p {
-  font-family: 'Montserrat';
+.information-filling h3 {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.1px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 15px;
 }
 
@@ -1133,27 +1133,23 @@ input.brands-item-imput::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 5px 0px;
+  padding: 5px 0px;
 }
 
-.information-filling-item:last-child {
-  margin-bottom: 0px;
-}
-
-.information-filling-item > p {
-  font-family: 'Montserrat';
+.information-filling-item p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.2px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-left: 10px;
 }
 
 /*---------------------------------------------- 10 ----------------------------------------------*/
 .footer {
-  background: #fafafa;
+  background: #FAFAFA;
   padding: 25px 0px;
 }
 
@@ -1171,8 +1167,8 @@ input.brands-item-imput::placeholder {
   margin-right: 405px;
 }
 
-.footer-info > p {
-  font-family: 'Montserrat';
+.footer-info p {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1197,6 +1193,41 @@ input.brands-item-imput::placeholder {
 }
 
 /*---------------------------------------------- End ----------------------------------------------*/
+@media (max-width: 1080px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .practice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .practice-item {
+    width: 210px;
+  }
+  .practice-item img {
+    width: 210px;
+  }
+  .about-us-box-filling {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu {
     -webkit-box-pack: center;
@@ -1233,19 +1264,149 @@ input.brands-item-imput::placeholder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0px 0px 50px 0px;
   }
   .practice-item {
     width: 170px;
     height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .practice-item > img {
+  .practice-item img {
     width: 170px;
   }
-  .practice-item > p {
-    font-size: 11px;
-  }
-  .practice-item {
+  .practice-item h2 {
     margin: 10px;
+  }
+  .practice-item p {
+    margin: 10px;
+  }
+  .practice-item:first-child > p {
+    margin: 10px;
+  }
+  .practice-item:nth-child(2) > p {
+    margin-bottom: 30px;
+  }
+  .practice-item:nth-child(3) > p {
+    margin-bottom: 50px;
+  }
+  .practice-item:last-child > p {
+    margin-bottom: 10px;
+  }
+  .about-us {
+    padding: 0px;
+  }
+  .about-us-info {
+    margin-bottom: 50px;
+  }
+  .about-us-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us-box-filling {
+    margin-left: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+  }
+  .about-us-box-filling p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .about-us-box-filling h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .brands {
+    padding-top: 0px;
+    margin-top: -30px;
+  }
+  .brands-box-images {
+    padding: 30px 0px;
+  }
+  input.brands-item-imput {
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: -30px;
+  }
+  .brands-item-info {
+    width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px 25px;
+  }
+  .brands-item-info h2 {
+    margin-top: 15px;
+  }
+  .communication {
+    padding-bottom: 50px;
+  }
+  .communication-info {
+    margin: 50px 0px;
+  }
+  .communication-item {
+    padding: 25px 5px;
+    width: 230px;
+  }
+  .communication-item p {
+    font-size: 13px;
+  }
+  .communication-item:nth-child(2) {
+    padding: 50px 5px;
+  }
+  .contact-box h2 {
+    font-size: 22px;
+  }
+  .contact-box p {
+    font-size: 12px;
+  }
+  .contact-item-button {
+    margin-left: 20px;
+  }
+  .information {
+    padding: 25px 0px 15px 0px;
+  }
+  .inofrmation-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .information-links {
+    padding: 0px 40px;
+    margin-bottom: 10px;
+  }
+  .information-filling {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 10px;
+  }
+  .information-filling h3 {
+    margin: 5px 5px 5px 30px;
+  }
+  .information-filling-item {
+    margin-left: 25px;
+    height: 40px;
+  }
+  .information-filling-item p {
+    font-size: 12px;
+    margin-top: 2.5px;
+  }
+  .footer {
+    padding: 15px 5px;
+  }
+  .footer-box p {
+    font-size: 12px;
+    width: 200px;
+  }
+  .footer-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */
